@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    color: #fff;
+}
+
+p{
+    font-size: 14px;
+}
+
+.qq-containerr{
+width: 90%;
+margin: auto;
+color: #fff;
+}
+
+
+
+.qq-color{
+    color: #A2D600;
+}
+
+.qq-yellow{
+    color: #D1B900;
+}
+
+.qq-small{
+font-size: 12px;
+font-weight: bold;
+}
+
+.qq-mid{
+font-size: 25px;
+font-weight: bold;
+}
+
+.qq-big{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btnn{
+    background-color: #A2D600;
+    color: #000000 !important;
+    font-weight: bold;
+    border: #8408FF;
+    padding: 8px 35px;
+    border-radius: 50px;
+    max-width: max-content;
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.accordion {
+    --bs-accordion-border-radius: 0 !important;
+    background-color: #1C1C1C;
+    color:white;
+}
+
+.accordion-button:not(.collapsed) {
+  
+    background-color: #1C1C1C;
+    color:white;
+    .accordion-button:not(.collapsed)::after{
+        background-image:url("assets/img/up.png");
+    }
+    
+}
+
+.accordion-button collapsed{
+    background-color: #1C1C1C;
+}
+
+.accordion {
+    --bs-accordion-color: #FFF;
+    --bs-accordion-bg: #1C1C1C;
+    --bs-accordion-border-color: #1C1C1C;
+    --bs-accordion-btn-icon: url("assets/img/up.png")
+
+}
+
+.accordion-button{
+    color: #fff;
+}
+.accordion-button:focus {
+    border-radius: 0 !important;
+    box-shadow: none;
+    border-color: 1c1c1c;
+    background-color: #1C1C1C;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.accordion-body{
+    background-color: #1C1C1C;
+    color: #fff;
+    text-align: initial;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image:url("assets/img/up.png");
+}
+
+.accordion-header{
+    border-bottom: 1px solid #000000;
+}
+
+
+
+

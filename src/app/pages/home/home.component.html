@@ -1,0 +1,131 @@
+<div class="qq-containerr">
+
+    <div class="qq-funbust">
+        <div class="qq-mt">
+
+            <div>
+                <div class="qq-mid"> Play <span class="qq-color">#funbust</span> & Earn</div>
+                <div class="qq-big qq-color">&nbsp; ₹ 10 Lakh+ everyday</div>
+                <div class="qq-small qq-yellow"> Download Now & Bust the Boredom </div>
+            </div>
+
+            <div class="mt-5">
+                <button class="btnn mt-5">DOWNLOAD NOW & GET ₹10 &nbsp;<img src="assets/img/download.png" alt=""></button>
+                <div class="mt-5 d-flex justify-content-between  col-sm-6 col-md-8 ">
+                    <!-- <img src="assets/img/rating.png" alt=""> -->
+                    <div>
+                        <img src="assets/img/star.png" alt=""> &nbsp; <b>4.5</b>
+                        <div><b>Rated</b></div>
+                    </div>
+                    <div class="br"></div>
+                    <div>
+                       <b> 1 Cr+</b>
+
+                        <div><b>Player</b></div>
+                    </div>
+                    <div class="br"></div>
+                    <div>
+                       <b> FB+</b>
+                        
+                        <div><b>Prime</b></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-2">
+            <figure>
+                <img class="homeimg" src="assets/img/homeimg.png" alt="">
+            </figure>
+        </div>
+    </div>
+    <!-- games section -->
+    <div class="qq-games qq-mt">
+        <button class="btnn"> GAMES</button>
+        <div class="mt-4">
+            <h2>Skill Based Games</h2>
+            <img src="assets/img/line.png" alt="">
+        </div>
+
+        <div class="qq-box">
+            <div class="qq-box-content" *ngFor="let item of games">
+                <img height="200" [src]="item.img" alt="">
+                <div class="qq-box-text">{{item.name}}</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Reviews Section -->
+
+    <div class="qq-games qq-mt">
+        <button class="btnn"> REVIEWS</button>
+        <div class="mt-4">
+            <h2>Journey Beyond Expectations</h2>
+            <img src="assets/img/line.png" alt="">
+        </div>
+
+        <div class="qq-box">
+            <div class="qq-box-review mr-2" *ngFor="let item of reviews">
+                <div class="qq-review">
+                   {{item.desc}}
+                </div>
+                <div class="qq-flex mt-2">
+                    <div><img width="70" src="assets/img/{{item.img}}.png" alt=""></div> &nbsp;
+                    <div class="mt-2"> <span class="qq-color">{{item.name}}</span> <br>
+                        ₹{{item.amount}} Winnings</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PARTNER Section -->
+
+    <div class="qq-games qq-mt">
+        <button class="btnn">PARTNER</button>
+        <div class="mt-4">
+            <h2>Our Pround Partner</h2>
+            <img src="assets/img/line.png" alt="">
+        </div>
+
+        <div class="qq-box qq-imgbox mt-5">
+            <figure> <img src="assets/img/bhim.png" alt=""></figure> &nbsp; &nbsp;&nbsp; &nbsp;
+            <figure> <img src="assets/img/qomet.png" alt=""></figure> &nbsp;&nbsp;&nbsp; &nbsp;
+            <figure> <img src="assets/img/paytm.png" alt=""></figure> &nbsp;&nbsp;&nbsp; &nbsp;
+            <figure> <img src="assets/img/digital.png" alt=""></figure> &nbsp;&nbsp;&nbsp; &nbsp;
+            <figure> <img src="assets/img/gpay.png" alt=""></figure> &nbsp;&nbsp;&nbsp; &nbsp;
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+
+    <div class="qq-games qq-mt">
+        <button class="btnn">FAQs</button>
+        <div class="mt-4">
+            <h2>Frequently Asked Questions</h2>
+            <img src="assets/img/line.png" alt="">
+        </div>
+
+        <div class="qq-accordian mt-5 ">
+            <ngb-accordion class="col-sm-8" *ngFor="let item of faq" #acc="ngbAccordion" [destroyOnHide]='false'
+                [closeOthers]="true" activeIds="ngb-panel-0">
+                <ngb-panel id="static-1" title="{{item.title}}">
+                    <ng-template ngbPanelContent>
+                        {{item.desc}}
+                    </ng-template>
+                </ngb-panel>
+
+            </ngb-accordion>
+        </div>
+        
+            
+      
+    </div>
+
+    <div class="my-5"></div> 
+    <div class="my-5"></div>
+     <div class="my-5"></div>
+
+</div>

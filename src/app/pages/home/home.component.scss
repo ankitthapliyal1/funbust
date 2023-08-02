@@ -1,0 +1,124 @@
+.qq-funbust {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qq-flex {
+    display: flex;
+}
+
+.qq-mt {
+    margin-top: 170px;
+}
+
+.qq-mt1 {
+    margin-top: 100px;
+}
+
+.qq-games {
+    text-align: center;
+}
+
+.qq-box {
+    display: flex;
+    margin-top: 50px;
+    //  flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.qq-box-content {
+    position: relative;
+
+}
+
+.qq-box-content :hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all ease-in-out;
+}
+
+.qq-box-text {
+    position: absolute;
+    bottom: 5px;
+    left: 30%;
+
+}
+
+.qq-box-review {
+    width: 33%;
+}
+
+.qq-review {
+    border-radius: 30px;
+    border: 1px solid #1c1c1c;
+    padding: 15px 30px;
+    font-size: 14px;
+    background: #1c1c1c;
+    margin: 2px;
+    min-height: 315px;
+}
+
+.qq-imgbox {
+    width: 80%;
+    margin: auto;
+    align-items: end;
+}
+
+.qq-accordian {
+    background-color: #1c1c1c;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.br{
+    border: 1px solid #fff;
+}
+
+@media (max-width:1270px) {
+
+    .qq-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .qq-mt{
+        margin-top: 120px;
+    }
+
+    .qq-review{
+        min-height: 350px;
+    }
+}
+
+@media (max-width:1050px) {
+
+    .qq-mt{
+        margin-top: 60px;
+    }
+
+    .qq-funbust {
+        display: block;
+        text-align: center;
+
+        .homeimg {
+            width: 100%;
+            height: auto;
+        }
+
+        .col-md-8{
+            margin: auto;
+        }
+    }
+
+    .qq-box-review{
+        width: 80%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .qq-review{
+        min-height: max-content;
+    }
+
+}

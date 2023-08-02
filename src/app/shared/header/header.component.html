@@ -1,0 +1,42 @@
+<header>
+  <div class="container1">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+        <div class="logo">
+          <img routerLink="" src="assets/img/logo.png" alt="Logo">
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+
+        <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu" [class.menuClass]="menuVariable">
+          <ul>
+            <li routerLinkActive="active" routerLink="about">ABOUT US</li>
+            <li routerLinkActive="active" >POLICIES
+              <div class="sub-menu">
+                  <ul>
+                    <li routerLink="privacy">Privacy Policy</li>
+                  <li routerLink="terms">Terms of use</li>
+                  <li routerLink="dispute">Dispute Policy</li>
+                  </ul>
+             </div>
+        </li>
+        <!-- <li routerLinkActive="active">FAQs</li> -->
+        <li> <a href="https://medium.com/@funbust/">BLOG</a></li>
+        <li> <a href="mailto:support@funbust.com">CONTACT US</a></li>
+        <li>
+          <div class="btnn">
+            DOWNLOAD APP
+          </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
